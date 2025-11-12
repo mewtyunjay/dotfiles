@@ -1,22 +1,20 @@
-background-opacity = 0.8
-background-blur-radius = 10
+background-opacity = 0.99
+background-blur-radius = 20
 
 # =========== THEMES ===========
 # theme =  dark:Everforest Dark Hard,light:Everforest Light Med
-theme = Gruvbox Dark Hard
+# theme = Gruvbox Dark Hard
 # theme = dark:Catppuccin Mocha,light:Catppuccin Latte
-# theme = dark:Afterglow,light:default-light
-
-# theme = Afterglow
-# theme = default-light
+theme = dark:Afterglow,light:default-light
 
 # =========== FONT ===========
-#font-family = TX-02
-font-family = JetBrains Mono
-#font-family = Berkeley Mono
+font-family = TX-02-Variable
+#font-family = JetBrains Mono
+#font-family = Berkeley Mono Variable
 
-font-size = 15
-#font-style = Retina SemiCondensed
+font-size = 14
+#font-style = SemiCondensed
+#font-variation = wght = 100
 #font-thicken = true
 
 
@@ -77,4 +75,8 @@ keybind = shift+enter=text:\x1b\r
 window-padding-x = 10
 window-padding-y = 10
 
-split-divider-color = fcba03
+split-divider-color = 705303
+
+# NAVIGATION
+keybind = ctrl+u=scroll_page_fractional:-0.05
+keybind = ctrl+d=scroll_page_fractional:0.05

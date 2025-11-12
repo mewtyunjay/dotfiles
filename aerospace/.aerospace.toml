@@ -1,8 +1,8 @@
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
-# after-startup-command = [
-#   'exec-and-forget borders active_color=0xfffcad03 inactive_color=0xfff0ffff width=6.0'
-# ]
+after-startup-command = [
+  'exec-and-forget borders active_color=0xfffcad03 inactive_color=0xfff0ffff width=4.0'
+]
 
 # Start AeroSpace at login
 start-at-login = true
@@ -14,7 +14,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 # See: https://nikitabobko.github.io/AeroSpace/guide#layouts
 # The 'accordion-padding' specifies the size of accordion padding
 # You can set 0 to disable the padding feature
-accordion-padding = 100
+accordion-padding = 50
 
 # Possible values: tiles|accordion
 default-root-container-layout = 'tiles'
@@ -93,12 +93,12 @@ run = 'layout floating'
 #                 See:
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-    inner.horizontal = 12
-    inner.vertical =   12
-    outer.left =       12
-    outer.bottom =     15
-    outer.top =        12
-    outer.right =      12
+    inner.horizontal = 8
+    inner.vertical =   8
+    outer.left =       8
+    outer.bottom =     8
+    outer.top =        8
+    outer.right =      8
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -155,6 +155,7 @@ run = 'layout floating'
     alt-7 = 'workspace 7'
     alt-8 = 'workspace 8'
     alt-9 = 'workspace 9'
+    alt-0 = 'workspace 10'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
     alt-shift-1 = ['move-node-to-workspace 1', 'workspace 1']
@@ -166,6 +167,7 @@ run = 'layout floating'
     alt-shift-7 = ['move-node-to-workspace 7', 'workspace 7']
     alt-shift-8 = ['move-node-to-workspace 8', 'workspace 8']
     alt-shift-9 = ['move-node-to-workspace 9', 'workspace 9']
+    alt-shift-0 = ['move-node-to-workspace 10', 'workspace 10']
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
     alt-tab = 'workspace-back-and-forth'
@@ -182,6 +184,16 @@ run = 'layout floating'
     alt-shift-down = 'join-with down'
     alt-shift-up = 'join-with up'
     alt-shift-right = 'join-with right'
+
+    # Application launchers
+    alt-b = 'exec-and-forget open -a /Applications/Arc.app'
+    alt-e = 'exec-and-forget open -a /Applications/Cursor.app'
+    alt-enter = 'exec-and-forget open -a /Applications/Ghostty.app'
+    alt-t = 'exec-and-forget open -a /Applications/Microsoft\ Teams.app'
+    alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
+    alt-s = 'exec-and-forget open -a /Applications/Spotify.app'
+    alt-w = 'exec-and-forget open -a /Applications/WhatsApp.app'
+    alt-z = 'exec-and-forget open -a /Applications/Zed.app'
 
 
 # 'service' binding mode declaration.
